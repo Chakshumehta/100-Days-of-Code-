@@ -1,31 +1,27 @@
+// Write a program to input two numbers and display sum, difference, product, and quotient
+
 #include <stdio.h>
 
 int main() {
     int num1, num2;
 
-    // asking the user to type the first number
-    printf("Enter the first number: ");
-    scanf("%d", &num1);
+    // Taking input for two numbers
+    scanf("%d %d", &num1, &num2);
 
-    // asking the user to type the second number
-    printf("Enter the second number: ");
-    scanf("%d", &num2);
+    // Showing the sum
+    printf("Sum=%d, ", num1 + num2);
 
-    // showing the sum of the two numbers
-    printf("Sum is %d\n", num1 + num2);
+    // Showing the difference
+    printf("Diff=%d, ", num1 - num2);
 
-    // showing the difference (first minus second)
-    printf("Difference is %d\n", num1 - num2);
+    // Showing the product
+    printf("Product=%d, ", num1 * num2);
 
-    // showing the product (multiplication)
-    printf("Product is %d\n", num1 * num2);
-
-    // checking if the second number is not zero before dividing
-    if (num2 != 0) {
-        printf("Quotient is %d\n", num1 / num2);
-    } else {
-        printf("Seconf number is zero, cannot divide by zero\n");
-    }
+    // Showing the quotient if second number is not zero
+    if(num2 != 0)
+        printf("Quotient=%d\n", num1 / num2);
+    else
+        printf("Quotient can not be calculated as second number is 0\n");
 
     return 0;
 }

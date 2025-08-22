@@ -1,20 +1,14 @@
+// Write a program to input two numbers and display their sum.
 #include <stdio.h>
 
 int main() {
-    int num1, num2, sum;
+    int num1, num2;
 
     // Taking two numbers as input
-    printf("Enter first number: ");
-    scanf("%d", &num1);
-
-    printf("Enter second number: ");
-    scanf("%d", &num2);
-
-    // Calculating sum
-    sum = num1 + num2;
+    scanf("%d %d", &num1, &num2);
 
     // Displaying the sum
-    printf("The sum of %d and %d is %d\n", num1, num2, sum);
+    printf("Sum = %d\n", num1 + num2);
 
     return 0;
 }
